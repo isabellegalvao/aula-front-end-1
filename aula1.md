@@ -286,7 +286,6 @@ Os elementos de metadados, como link, meta, título e estilo, geralmente ficam d
 ## Exercícios
 
 * Crie uma página da Web na qual esteja seu nome na tela.
-* Crie uma página da Web na qual esteja os números de 1 a 10 na tela.
 * Crie uma página da web e defina seu título como "Esta é uma página da web".
 * Crie uma página da Web na qual esteja qualquer texto de sua escolha na tela.
 * Crie alguns links para vários mecanismos de pesquisa (google, yahoo, altavista, lycos, etc).
