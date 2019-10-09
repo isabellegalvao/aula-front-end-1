@@ -13,11 +13,17 @@ https://htmlhead.dev/
 ### CSS
 CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa Folha de Estilo em Cascatas. É uma linguagem que trabalha com documentos HTML para definir a maneira como os documentos da Web são apresentados. Ele é usado para controlar a aparência e a posição dos elementos HTML.
 
-## Semântica - Introdução ao CSS básico
+## Anatomia
 
-### Propridades
+```css
+seletor{
+  propriedade: valor;
+}
+```
 
-#### Fundo
+## Propridades
+
+### Fundo
 | Propridades | Definição|
 |----------|:-------------:|
 | background | Define uma variedade de propriedades de segundo plano em uma declaração. |
@@ -28,19 +34,19 @@ CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido par
 | background-repeat | Especifique se / como a imagem de fundo é lado a lado. |
 | background-size  | Especifica o tamanho das imagens de fundo. |
 
-#### Borda
+### Borda
 | Propridades | Definição|
 |----------|:-------------:|
 | border | Define a largura, estilo e cor dos quatro lados da borda de um elemento. |
 | border-radius | Define a forma dos cantos da borda de um elemento. |
 
-#### Cor
+### Cor
 | Propridades | Definição|
 |----------|:-------------:|
 | color | Especifique a cor do texto de um elemento. |
 | opacity  | Especifica a transparência de um elemento. |
 
-#### Dimensão
+### Dimensão
 | Propridades | Definição|
 |----------|:-------------:|
 | height | Especifique a altura de um elemento. |
@@ -50,7 +56,7 @@ CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido par
 | min-width | Especifique a largura mínima de um elemento. |
 | width | Especifique a largura de um elemento. |
 
-#### Font
+### Font
 | Propridades | Definição|
 |----------|:-------------:|
 | font | Define uma variedade de propriedades de fonte em uma declaração. |
@@ -59,12 +65,12 @@ CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido par
 | font-style | Define o estilo da fonte para o texto. |
 | font-weight | Especifique o peso da fonte do texto. |
 
-#### Lista
+### Lista
 | Propridades | Definição|
 |----------|:-------------:|
 | list-style | Define o estilo de exibição para uma lista e elementos da lista. |
 
-#### Espaçamento
+### Espaçamento
 | Propridades | Definição|
 |----------|:-------------:|
 | margin | Define a margem nos quatro lados do elemento. |
@@ -81,7 +87,7 @@ CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido par
 | padding-right | Define o preenchimento direita do elemento. |
 | padding-top | Define o preenchimento superior do elemento. |
 
-#### Texto
+### Texto
 | Propridades | Definição|
 |----------|:-------------:|
 | direction| Defina a direção do texto / direção da escrita. |
@@ -96,7 +102,7 @@ CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido par
 | letter-spacing| Define o espaçamento extra entre as letras. |
 | word-spacing| Define o espaçamento entre as palavras. |
 
-#### Posicionamento
+### Posicionamento
 | Propridades | Definição|
 |----------|:-------------:|
 | display | Especifica como um elemento é exibido na tela. |
@@ -112,11 +118,84 @@ overflow-x  | Especifica como gerenciar o conteúdo quando ele exceder a largura
 | box-shadow  | Aplica uma ou mais sombras à caixa do elemento. |
 | box-sizing  | Altere o modelo de caixa CSS padrão. |
 
-### Seletores
+## Pseudo-classes
+
+Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, `:hover` pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.
+
+```css
+
+div:hover {
+  background-color: #F89B4D;
+}
+
+```
+
+Pseudo-classes permitem que você aplique um estilo a um elemento não apenas em relação ao conteúdo da árvore do documento, mas também em relação a fatores externos como o histórico de navegação (:visited, por exemplo), o estado do seu conteúdo (como :checked em certos elementos de um formulário), ou a posição do mouse (como :hover, que permite saber se o mouse está sobre um elemento ou não).
+
+Observação: Diferentemente das pseudo-classes, pseudo-elementos podem ser usados para estilizar uma parte específica de um elemento.
+
+
+```css
+
+seletor:pseudo-classe {
+  propriedade: valor;
+} 
+
+```
+
+Pseudo-classes padrão
+* :active
+* :checked
+* :disabled
+* :first
+* :first-child
+* :first-of-type
+* :focus
+* :hover
+* :last-child
+* :last-of-type
+* :link
+* :not()
+* :nth-child()
+* :nth-last-child()
+* :nth-last-of-type()
+* :nth-of-type()
+* :only-child
+* :only-of-type
+* :read-only
+* :read-write
+* :required
+* :root
+* :visited
+
+## Pseudo-elementos 
+
+Diferentemente das pseudo-classes, pseudo-elementos podem ser usados para estilizar uma parte específica de um elemento.
+
+```css
+
+seletor::pseudo-elemento {
+  propriedade: valor;
+} 
+
+```
+
+> Como regra, os dois pontos devem ser usados duas vezes  ( :: )  ao invés de uma única vez  ( : ). Isso distingue pseudo-classes de pseudo-elementos. Apesar disso, devido a essa distinção não estar presente em versões mais antigas da especificação da W3C, a maioria dos navegadores suportam ambas as sintaxes para os pseudo-elementos originais.
+
+Pseudo-elementos padrão
+* ::after
+* ::before
+* ::first-letter
+* ::first-line
+* ::selection
+* ::placeholder 
+
+
+## Seletores
 
 <img src="https://pbs.twimg.com/media/EBYtE3RXkAE5mCD?format=jpg&name=large" alt="Front-End Checklist" width="100%">
 
-### Nomeando classes com BEM
+## Nomeando classes com BEM
 
 BEM é uma metodologia, uma convenção, um padrão de nomenclatura que utilizamos para manter o nosso projeto simples e organizado. Essa metodologia é aplicada na nomenclatura das classes CSS dos nossos elementos HTML. A sigla BEM significa Block Element Modifier, em português, Bloco Elemento Modificador.
 
@@ -149,6 +228,7 @@ Para contemplar os modificadores no exemplo, imagine que algumas publicações t
 Nossa primeira classe sempre será o bloco: `.list`
 Para criarmos os elementos, utilizamos 2 underlines ( __ ) após o nome do nosso bloco: `.list__item`, `.list__title`
 
+
 ### Posicionamento
 
 https://www.origamid.com/projetos/css-grid-layout-guia-completo/
@@ -156,6 +236,7 @@ https://www.origamid.com/projetos/css-grid-layout-guia-completo/
 https://origamid.com/projetos/flexbox-guia-completo/
 
 
+## Recursos
 
 > [HTML e CSS - Common terms](https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/) Revisão
 
@@ -168,3 +249,11 @@ https://origamid.com/projetos/flexbox-guia-completo/
 > [Layout](https://calltoidea.com/application/images/call/Pages/layouts/n0cl1qtyaN-layout-cti.jpg)
 
 > [Layout](https://calltoidea.com/layouts/)
+
+## Coisas maneiras com CSS
+
+[Jogo da velha](https://codepen.io/kalabasa/pen/oVMOZK)
+[Totoro](https://codepen.io/jsmit-s/pen/yrBKEe)
+[Imagem de caixa de leite](https://codepen.io/twelve13/pen/ewKEXp)
+[Lava Lamp](https://codepen.io/jsmit-s/pen/mgbxXz)
+[Botões](https://codepen.io/chengarda/pen/KbRaEL)
