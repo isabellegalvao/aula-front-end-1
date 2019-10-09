@@ -288,7 +288,7 @@ Os elementos de metadados, como link, meta, título e estilo, geralmente ficam d
 * Crie uma página da Web na qual esteja seu nome na tela.
 * Crie uma página da web e defina seu título como "Esta é uma página da web".
 * Crie uma página da Web na qual esteja qualquer texto de sua escolha na tela.
-* Crie alguns links para vários mecanismos de pesquisa (google, yahoo, altavista, lycos, etc).
+* Crie alguns links para vários mecanismos de pesquisa (google, yahoo, duckduckgo, bing, etc).
 * Crie links para cinco páginas diferentes em cinco sites diferentes, que deverão abrir em uma nova janela.
 * Crie uma página com um link na parte superior que, quando clicado, saltará até o final da página.
 * Crie uma página com um link na parte inferior que, quando clicada, saltará até o topo da página.
