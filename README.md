@@ -14,9 +14,8 @@
 * Primeiros passos com controle de versão de código com Github
 * HTML
     * Layout
-* Nomeando classes do CSS com Método BEM
 * CSS
-    * Sintaxe e formas de uso (inline, interno, externo)
+    * Sintaxe e formas de uso (interno)
     * Propriedades básicas
 * Exercício Extra - pra resolver até a próxima aula: Desenvolver o código nivel II para o Layout dado
 
@@ -24,21 +23,9 @@
 * HTML
     * Layouts
 * CSS
-    * Seletores complexos
-    * Display flex e grid
-* Exercício Extra - pra resolver até a próxima aula: Desenvolver o código nivel III para o Layout dado
-
-## Aula 4 - Efeitos com Javascript
-* Js
-    * Dom
     * Seletores
-    * Eventos
-    * Exercícios: Formulários de Login e newsletter
-* Exercício Extra - pra resolver até a próxima aula: Formulário de Feeback
-
-## Aula 5 - Publicando online
-* Js
-    * Exercícios: Menu, Modal, Galeria
-* Finalização de um site
-* Colocando o site online com Netlify
+    * Revisando as propriedades básicas
+* 2 efeitos em JS
 * Como continuar estudando?
+* Onde me encontrar nas redes
+

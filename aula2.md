@@ -179,7 +179,6 @@ seletor::pseudo-elemento {
 } 
 
 ```
-
 > Como regra, os dois pontos devem ser usados duas vezes  ( :: )  ao invés de uma única vez  ( : ). Isso distingue pseudo-classes de pseudo-elementos. Apesar disso, devido a essa distinção não estar presente em versões mais antigas da especificação da W3C, a maioria dos navegadores suportam ambas as sintaxes para os pseudo-elementos originais.
 
 Pseudo-elementos padrão
@@ -189,44 +188,6 @@ Pseudo-elementos padrão
 * ::first-line
 * ::selection
 * ::placeholder 
-
-
-## Seletores
-
-<img src="https://pbs.twimg.com/media/EBYtE3RXkAE5mCD?format=jpg&name=large" alt="Front-End Checklist" width="100%">
-
-## Nomeando classes com BEM
-
-BEM é uma metodologia, uma convenção, um padrão de nomenclatura que utilizamos para manter o nosso projeto simples e organizado. Essa metodologia é aplicada na nomenclatura das classes CSS dos nossos elementos HTML. A sigla BEM significa Block Element Modifier, em português, Bloco Elemento Modificador.
-
-```html
-<ul class="list">
-  <li class="list__item">
-    <h2 class="list__title">My publication</h2>
-    <p class="list__author">Julio Lozovei</p>
-    <p class="list__text">A publication using BEM :)</p>
-  </li>
-</ul>
-```
-
-No exemplo acima, temos um bloco e alguns elementos. Onde:
-`.list` é um bloco;
-`.list__item`, `.list__title`, `.list__author` e `.list__text` são elementos;
-Para contemplar os modificadores no exemplo, imagine que algumas publicações terão um certo destaque em relação as outras. Dessa forma, nossa estrutura ficaria assim:
-
-```html
-<ul class="list">
-  <li class="list__item list__item--highlight">
-    <h2 class="list__title">My publication</h2>
-    <p class="list__author">Julio Lozovei</p>
-    
-    <p class="list__text">A publication using BEM.</p>
-  </li>
-</ul>
-```
-
-Nossa primeira classe sempre será o bloco: `.list`
-Para criarmos os elementos, utilizamos 2 underlines ( __ ) após o nome do nosso bloco: `.list__item`, `.list__title`
 
 
 ### Posicionamento
